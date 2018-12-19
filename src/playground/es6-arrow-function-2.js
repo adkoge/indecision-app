@@ -1,5 +1,3 @@
-"use strict";
-
 // arguments object - no longer bound with arrow functions
 
 // const add2 = function(a, b) {
@@ -28,15 +26,11 @@
 
 // Challenge area
 
-var multiplier = {
+const multiplier = {
   numbers: [2, 5, 8, 20],
   multiplyBy: 2,
-  multiply: function multiply() {
-    var _this = this;
-
-    return this.numbers.map(function (number) {
-      return number * _this.multiplyBy;
-    });
+  multiply() {
+    return this.numbers.map(number => number * this.multiplyBy);
   }
 };
 
