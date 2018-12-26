@@ -13,5 +13,13 @@ const canDrink = (age) => {
     console.log(`${age} is not old enough to drink`);
   }
 }
+  
+export default (age) => {
+  if (age >= 65) {
+    console.log('Is a senior');
+  } else {
+    console.log('Is not a senior');
+  }
+};
 
 export { isAdult, canDrink };
